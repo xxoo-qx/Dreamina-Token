@@ -1,0 +1,15 @@
+node_modules
+package-lock.json
+.env
+data/data.json
+data
+caches
+logs/
+*.log
+pkg_dist/*
+pkg_dist/
+.idea
+/public/dist
+.spec-workflow
+*.md
+!README.md

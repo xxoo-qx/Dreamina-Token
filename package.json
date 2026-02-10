@@ -1,0 +1,34 @@
+{
+  "name": "dreamina-token-manager",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/start.js",
+    "dev": "nodemon --config nodemon.json src/server.js",
+    "pm2": "pm2 start ecosystem.config.js",
+    "pm2:stop": "pm2 stop dreamina",
+    "pm2:restart": "pm2 restart dreamina",
+    "pm2:reload": "pm2 reload dreamina",
+    "pm2:delete": "pm2 delete dreamina",
+    "pm2:logs": "pm2 logs dreamina",
+    "pm2:status": "pm2 status",
+    "pm2:monit": "pm2 monit"
+  },
+  "keywords": ["dreamina", "token-manager", "sessionid"],
+  "author": "",
+  "license": "ISC",
+  "description": "Dreamina SessionID Token Manager",
+  "dependencies": {
+    "axios": "^1.11.0",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "ioredis": "^5.6.1",
+    "playwright": "1.56.1",
+    "pm2": "^6.0.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
